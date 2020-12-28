@@ -1,0 +1,232 @@
+/* body {
+    font-family: 'segoe ui light';
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../Images/portrait-man-dark.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-color {
+    color: #ff206e !important;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid #fff 1px;
+    margin: 5px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.h-f:hover {
+    background-color: #4267B2;
+}
+
+.h-t:hover {
+    background-color: #1DA1F2;
+}
+
+.h-l:hover {
+    background-color: #2867B2;
+}
+
+.h-g:hover {
+    background-color: #DB4437;
+}
+
+.title::after {
+    content: '';
+    background-color: #ff206e;
+    position: absolute;
+    right: 0;
+    width: 35%;
+    top: 50%;
+    height: 3px;
+}
+
+.title::before {
+    content: '';
+    background-color: #ff206e;
+    position: absolute;
+    left: 0;
+    width: 35%;
+    top: 50%;
+    height: 3px;
+}
+
+.title {
+    position: relative;
+}
+
+.title h2 {
+    color: rgb(241, 241, 241);
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.title h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.about-content h3 {
+    font-size: 2.5rem;
+}
+
+.underline {
+    height: 2px;
+    content: '';
+}
+
+.services-title h2 {
+    color: rgb(241, 241, 241);
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.services-title h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.services-title::after {
+    content: '';
+    background-color: #ff206e;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    top: 50%;
+    height: 3px;
+}
+
+.services-title::before {
+    content: '';
+    background-color: #ff206e;
+    position: absolute;
+    left: 0;
+    width: 30%;
+    top: 50%;
+    height: 3px;
+}
+
+.brand h4::after {
+    content: '';
+    background-color: #ff206e;
+    position: absolute;
+    right: 35%;
+    width: 30%;
+    top: 150%;
+    height: 2px;
+}
+
+.services-icon {
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+
+/* .brand {
+        margin: 0px 5px;
+    }
+     */
+
+@media all and (min-width: 1201px) {
+    .title h2 {
+        font-size: 5rem;
+    }
+    .title h3 {
+        font-size: 2.5rem;
+    }
+    .services-title h2 {
+        font-size: 5rem;
+    }
+    .services-title h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media all and (min-width: 993px) and (max-width:1200px) {
+    .title h2 {
+        font-size: 4.5rem;
+    }
+    .title h3 {
+        font-size: 2.25rem;
+    }
+    .services-title h2 {
+        font-size: 4.5rem;
+    }
+    .services-title h3 {
+        font-size: 2.25rem;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width:992px) {
+    .title h2 {
+        font-size: 3.5rem;
+    }
+    .title h3 {
+        font-size: 1.75rem;
+    }
+    .services-title h2 {
+        font-size: 3.5rem;
+    }
+    .services-title h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media all and (min-width: 576px) and (max-width:767px) {
+    .title h2 {
+        font-size: 2.5rem;
+    }
+    .title h3 {
+        font-size: 1.25rem;
+    }
+    .about-content {
+        margin-top: 10px;
+    }
+    .services-title h2 {
+        font-size: 2.5rem;
+    }
+    .services-title h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media all and (max-width:575px) {
+    .title h2 {
+        font-size: 1.5rem;
+    }
+    .title h3 {
+        font-size: 0.75rem;
+    }
+    .about-content {
+        margin-top: 20px;
+    }
+    .services-title h2 {
+        font-size: 1.5rem;
+    }
+    .services-title h3 {
+        font-size: 0.75rem;
+    }
+}
